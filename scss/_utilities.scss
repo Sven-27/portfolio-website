@@ -47,6 +47,26 @@ input[class^='btn-']:hover{
     text-align: center;
 }
 
+//Backgrounds
+.bg{
+    &-main{
+        background: $main-color;
+        color: set-text-color($main-color);
+    }
+    &-dark{
+        background: $dark-color;
+        color: set-text-color($dark-color);
+    }
+    &-light{
+        background: $light-color;
+        color: set-text-color($light-color);
+    }
+    &-medium{
+        background: $medium-color;
+        color: set-text-color($medium-color);
+    }
+}
+
 //Padding
 .py{
     &-1{
@@ -79,19 +99,19 @@ input[class^='btn-']:hover{
     }
 }
 
-//Home Sections
-#home{
-    &-a{
-        .specials{
-            margin-top: 3rem;
-            display: grid;
-            grid-gap: 1rem;
-            grid-template-columns: repeat(4, 1fr);
+.section-title{
+    font-size: 2rem;
+    display: block;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    font-weight: 100;
+    text-transform: uppercase;
+}
 
-            .fas{
-                color: $main-color;
-                padding-bottom: 0.4rem;
-            }
-        }
-    }
+.bottom-line{
+    height: 2px;
+    width: 3rem;
+    background: $main-color;
+    display: block;
+    margin: 0 auto 1rem auto;
 }
